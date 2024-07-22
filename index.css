@@ -1,0 +1,75 @@
+body{
+background-color: white;
+}
+#flex{
+    padding-top: 50px;
+    display: flex;
+    margin:10px auto;
+    align-items:center;
+    width: 1400px;
+
+}
+h1{
+    align-items: center;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+}
+button{
+    height: 4.5rem;
+    width: 4.5rem;
+    padding: 0px;
+    margin: 0px;
+    background-color:lightgray;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+}
+#capaCalculadora{
+    padding: 10px;
+    height: 28rem;
+    width: 22rem;
+    margin: 40px auto;
+    background-color: rgba(128, 128, 128, 0.644);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 0.5px rgba(0, 0, 0, 0.527);
+}
+#displayCalculadora{
+    height: 4rem;
+    width: 20rem;
+    margin: 5px auto;
+    font-size: 1.5rem;
+    background-color: lightgreen;
+}
+#container{
+    margin: 20px;
+    margin: auto;
+    display: flex;
+}
+#caixaBotões{
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#linhaCalculadora{
+    margin: 5px;
+    padding: 0px;
+}
+table{
+    display: block;
+    width: 800px;
+    padding: 6px;
+    border-radius: 5px;
+    background-color:darkgreen ;
+    display: block;
+    box-shadow: 2px 2px 2px 0.5px rgba(0, 0, 0, 0.527);
+}
+td{
+    height: 40px;
+    width: 400px;
+    font-weight:bold;
+    font-size: 30px;
+    background-color: lightgreen; 
+    color:black;
+}
