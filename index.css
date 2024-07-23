@@ -2,16 +2,15 @@ body{
 background-color: white;
 }
 #flex{
-    padding-top: 50px;
+    padding-top: 5rem;
     display: flex;
-    margin:10px auto;
+    margin:1rem auto;
     align-items:center;
-    width: 1400px;
-
+    width: 80%;
 }
 h1{
     align-items: center;
-    padding: 10px;
+    padding: 1rem;
     color: black;
     font-weight: bold;
 }
@@ -26,13 +25,13 @@ button{
     color: black;
 }
 #capaCalculadora{
-    padding: 10px;
+    padding: 1rem;
     height: 28rem;
     width: 22rem;
-    margin: 40px auto;
+    margin: 1rem auto;
     background-color: rgba(128, 128, 128, 0.644);
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px 0.5px rgba(0, 0, 0, 0.527);
+    border-radius: 1rem;
+    box-shadow: 2px 2px px 0.5px rgba(0, 0, 0, 0.527);
 }
 #displayCalculadora{
     height: 4rem;
@@ -47,29 +46,132 @@ button{
     display: flex;
 }
 #caixaBotões{
-    margin: 5px;
-    padding: 10px;
+    margin: 0.5rem auto ;
+    padding: 0.5rem;
     display: flex;
     flex-direction: column;
 }
 #linhaCalculadora{
-    margin: 5px;
+    margin: 3px;
     padding: 0px;
 }
 table{
-    display: block;
-    width: 800px;
+    width: 50rem;
     padding: 6px;
     border-radius: 5px;
     background-color:darkgreen ;
-    display: block;
-    box-shadow: 2px 2px 2px 0.5px rgba(0, 0, 0, 0.527);
+    box-shadow: 2px 2px 3px 0.5px rgba(0, 0, 0, 0.527);
 }
 td{
-    height: 40px;
-    width: 400px;
+    height: 3rem;
+    width: 40rem;
     font-weight:bold;
-    font-size: 30px;
+    font-size: 2rem;
     background-color: lightgreen; 
     color:black;
+}
+
+@media only screen and (max-width: 1520px){
+    #capaCalculadora{
+        padding: 1rem;
+        height: 22rem;
+        width: 18rem;
+        margin: 2rem auto;
+    }
+    #displayCalculadora{
+        height: 4rem;
+        width: 16rem;
+        font-size: 1rem;
+    }
+    button{
+        height: 3.5rem;
+        width: 3.5rem;
+        padding: 0px;
+        margin-left: 0px;
+        font-size: 2.0rem;
+    }
+    table{
+        display: block;
+        width: 40rem;
+        padding: 6px;
+        margin-left: 10px;
+        border-radius: 5px;
+    }
+    td{
+        height: 3rem;
+        width: 20rem;
+        font-weight:bold;
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width: 1175px){
+    #capaCalculadora{
+        padding: 1rem;
+        height: 18rem;
+        width: 14rem;
+        margin: 1rem auto;
+    }
+    #displayCalculadora{
+        height: 2rem;
+        width: 13rem;
+        font-size: 1rem;
+    }
+    button{
+        height: 2.5rem;
+        width: 2.5rem;
+        margin: 3px auto;
+        font-size: 1.5rem;
+    }
+    table{
+        display: block;
+        width: 30rem;
+        padding: 3px;
+        border-radius: 5px;
+    }
+    td{
+        height: 2rem;
+        width: 15rem;
+        font-weight:bold;
+        font-size: 1.0rem;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    #flex{
+        padding-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        margin:1rem auto;
+    }
+    #capaCalculadora{
+        padding: 1rem;
+        height: 18rem;
+        width: 14rem;
+        margin: 1rem auto;
+    }
+    #displayCalculadora{
+        height: 2rem;
+        width: 13rem;
+        font-size: 1rem;
+    }
+    button{
+        height: 2.5rem;
+        width: 2.5rem;
+        margin: 3px auto;
+        font-size: 1.5rem;
+    }
+    table{
+        rotate: calc(90deg);
+        width: 30rem;
+        height: 13.5rem;
+        padding: 3px;
+        margin-top: 12rem;
+        border-radius: 5px;
+    }
+    td{
+        height: 3rem;
+        width: 15rem;
+        font-weight:bold;
+        font-size: 1.0rem;
+    }
 }
