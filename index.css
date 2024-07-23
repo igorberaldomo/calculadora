@@ -8,12 +8,6 @@ background-color: white;
     align-items:center;
     width: 80%;
 }
-h1{
-    align-items: center;
-    padding: 1rem;
-    color: black;
-    font-weight: bold;
-}
 button{
     height: 4.5rem;
     width: 4.5rem;
@@ -32,13 +26,19 @@ button{
     background-color: rgba(128, 128, 128, 0.644);
     border-radius: 1rem;
     box-shadow: 2px 2px px 0.5px rgba(0, 0, 0, 0.527);
+    
 }
 #displayCalculadora{
+    margin: auto;
     height: 4rem;
     width: 20rem;
-    margin: 5px auto;
     font-size: 1.5rem;
     background-color: lightgreen;
+    text-align: left;
+    justify-content: center;
+    align-items: normal;
+    color: black;
+    font-weight: bold;
 }
 #container{
     margin: 20px;
@@ -81,7 +81,9 @@ td{
     #displayCalculadora{
         height: 4rem;
         width: 16rem;
-        font-size: 1rem;
+        font-size: 1.5rem;
+        text-align: left;
+        justify-content: center;
     }
     button{
         height: 3.5rem;
@@ -115,6 +117,7 @@ td{
         height: 2rem;
         width: 13rem;
         font-size: 1rem;
+
     }
     button{
         height: 2.5rem;
