@@ -1,13 +1,18 @@
 let operaçãoPretendida = window.document.getElementById("operaçãoPretendida")
 let listacalculos = window.document.getElementById("listacalculos")
-let arrayContas =["","","","",];
-let arrayDatas =["","","","",];
+let arrayOperações =["","","",""];
+let arrayContas =["","","",""];
+let arrayDatas =["","","",""];
 
 function adicionar(value){
     if (value == "c") operaçãoPretendida.innerText = "";
-    else if (value != "=") operaçãoPretendida.innerText += value;
-    else {
-      try { 
+    else if (value != "=") {
+      operaçãoPretendida.innerText += value;
+      operacoes =`${operaçãoPretendida.innerText}`
+    }
+    else { 
+      adicionaArrayOperacoes(operacoes)
+      try {
         texto = `${operaçãoPretendida.innerText} = ${eval(operaçãoPretendida.innerText).toFixed(2)}`
         adicionaArrayContas(texto)
         operaçãoPretendida.innerText = ""
@@ -15,6 +20,11 @@ function adicionar(value){
         alert("operação não pode ser realizada");
       }
     }
+}
+function adicionaArrayOperacoes(operações){
+  arrayOperações.pop();
+  arrayOperações.unshift(`${operações}`)
+  return 
 }
 
 function adicionaArrayContas(texto){
@@ -47,17 +57,19 @@ function getDate(){
 createTable(arrayContas, arrayDatas)
 
 function createTable(arrayContas , arrayDatas){
-
   let tabela = document.getElementById("tabela")
   tabela.innerHTML = ""
   for(let i =0; i <arrayContas.length; i++){
     let row = `<tr>
     <td>${arrayDatas[i]}</td>
-    <td>${arrayContas[i]}</td>
+    <td><button id="hidden" onclick="voltarDisplay(${i})">${arrayContas[i]}</button></td>
     </tr>
     `
     tabela.innerHTML += row
 
   }
-  console.log(arrayContas)
+}
+
+function voltarDisplay(numero){
+  operaçãoPretendida.innerText = `${arrayOperações[numero]}`
 }

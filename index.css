@@ -55,6 +55,11 @@ button{
     margin: 3px;
     padding: 0px;
 }
+#hidden{
+    width: 100%;
+    background-color: lightgreen;
+    border: none;
+}
 table{
     width: 50rem;
     padding: 6px;
