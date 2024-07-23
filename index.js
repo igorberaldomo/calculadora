@@ -1,5 +1,4 @@
 let operaçãoPretendida = window.document.getElementById("operaçãoPretendida")
-let listacalculos = window.document.getElementById("listacalculos")
 let arrayOperações =["","","",""];
 let arrayContas =["","","",""];
 let arrayDatas =["","","",""];
@@ -11,10 +10,10 @@ function adicionar(value){
       operacoes =`${operaçãoPretendida.innerText}`
     }
     else { 
-      adicionaArrayOperacoes(operacoes)
       try {
         texto = `${operaçãoPretendida.innerText} = ${eval(operaçãoPretendida.innerText).toFixed(2)}`
         adicionaArrayContas(texto)
+        adicionaArrayOperacoes(operacoes)
         operaçãoPretendida.innerText = ""
       } catch {
         alert("operação não pode ser realizada");
@@ -24,7 +23,6 @@ function adicionar(value){
 function adicionaArrayOperacoes(operações){
   arrayOperações.pop();
   arrayOperações.unshift(`${operações}`)
-  return 
 }
 
 function adicionaArrayContas(texto){
